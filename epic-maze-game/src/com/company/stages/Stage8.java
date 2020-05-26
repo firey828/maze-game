@@ -47,19 +47,19 @@ public class Stage8 implements Stage {
         return _end;
     }
     public Player getMyPlayer() {
-        return _levelFivePlayer;
+        return _levelEightPlayer;
     }
     public Minotaur getMyMinotaur() {
-        return _levelFiveMinotaur;
+        return _levelEightMinotaur;
     }
     public Rat getMyRat() {
-        return _levelFiveRat;
+        return _levelEightRat;
     }
-    public Zombie getMyZombie() { return _levelFiveZombie; }
-    public Key getMyKey() { return (Key) _levelFiveKey; }
-    public Map getMyMap() { return (Map) _levelFiveMap; }
-    public Sword getMySword() { return (Sword) _levelFiveSword; }
-    public Torch getMyTorch() { return (Torch) _levelFiveTorch; }
+    public Zombie getMyZombie() { return _levelEightZombie; }
+    public Key getMyKey() { return (Key) _levelEightKey; }
+    public Map getMyMap() { return (Map) _levelEightMap; }
+    public Sword getMySword() { return (Sword) _levelEightSword; }
+    public Torch getMyTorch() { return (Torch) _levelEightTorch; }
 
     // ======== SETTERS ========
     public void setPlayerIsEnded(boolean b) {
