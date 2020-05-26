@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class FogOfWar {
 
-    // instance variables
+    // ======== INSTANCE VARIABLES ========
     private boolean _playerHasTorch;
     private boolean _playerHasMap;
     Stage _stage;

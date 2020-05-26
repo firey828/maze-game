@@ -4,7 +4,7 @@ import com.company.Position;
 
 public interface Item {
 
-    // setters
+    // ======== SETTERS ========
     public void setPosition(Position p);
 
     // getters
