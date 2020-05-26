@@ -10,35 +10,45 @@ import com.company.effects.*;
 
 public class Player {
 
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
-
     private boolean _hasSword = false;
     private boolean _hasTorch = false;
     private boolean _hasMap = false;
     private boolean _hasKey = false;
-
     private int _stepsTillTorchRunsOut;
-
     private boolean _isAlive = true;
 
+    // ======== GETTERS ========
     public Position getPosition() {
         return _curPos;
     }
-
     public boolean isAlive() {
         return _isAlive;
     }
+    public boolean hasSword() {
+        return _hasSword;
+    }
+    public boolean hasMap() {
+        return _hasMap;
+    }
+    public boolean hasTorch() {
+        return _hasTorch;
+    }
+    public boolean hasKey() { return _hasKey; }
 
+    // ======== SETTERS ========
     public void setPosition(Position p) {
         _curPos = p;
     }
 
-    public void killPlayer() {
-        _isAlive = false;
-    }
-
+    // ======== CONSTRUCTORS ========
     public Player(Position _mySpawnPoint, Position _myEndPoint) {
         _curPos = _mySpawnPoint;
+    }
+
+    public void killPlayer() {
+        _isAlive = false;
     }
 
     public boolean amIAt(Position dest) {
@@ -90,20 +100,6 @@ public class Player {
         }
         return false;
     }
-
-    public boolean hasSword() {
-        return _hasSword;
-    }
-
-    public boolean hasMap() {
-        return _hasMap;
-    }
-
-    public boolean hasTorch() {
-        return _hasTorch;
-    }
-
-    public boolean hasKey() { return _hasKey; }
 
     public void pickUpSword() {
         _hasSword = true;

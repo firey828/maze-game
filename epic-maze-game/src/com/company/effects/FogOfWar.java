@@ -18,6 +18,7 @@ public class FogOfWar {
     public Position _playerPosition;
     private int _searchRange;
 
+    // ======== CONSTRUCTORS ========
     public FogOfWar(Stage stage) {
         _stage = stage;
         _playerPosition = _stage.getMyPlayer().getPosition();
