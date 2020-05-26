@@ -13,13 +13,35 @@ import static com.company.essentials.Direction.*;
 
 public class Zombie {
 
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
     private Direction _curDir;
     private int _lurchCount;
     private boolean _isAlive;
 
-    // public Position getPosition() { return _curPos;	}
+    // ======== GETTERS ========
+    public boolean isZombieAlive() {
+        return _isAlive;
+    }
+    public Direction getDirection() {
+        return _curDir;
+    }
+    public int getRow() {
+        return _curPos.getRow();
+    }
+    public int getCol() {
+        return _curPos.getCol();
+    }
+    public Position getPosition() {
+        return _curPos;
+    }
 
+    // ======== SETTERS ========
+    public void setPosition(Position p) {
+        _curPos = p;
+    }
+
+    // ======== CONSTRUCTORS ========
     public Zombie(Position zombieSpawnPoint) {
         _curPos = zombieSpawnPoint;
         _curDir = Direction.mSouth;
@@ -30,31 +52,7 @@ public class Zombie {
     public void killZombie() {
         _isAlive = false;
     }
-
-    public boolean isZombieAlive() {
-        return _isAlive;
-    }
-
-    public Direction getDirection() {
-        return _curDir;
-    }
-
-    public void setPosition(Position p) {
-        _curPos = p;
-    }
-
-    public int getRow() {
-        return _curPos.getRow();
-    }
-
-    public int getCol() {
-        return _curPos.getCol();
-    }
-
-    public Position getPosition() {
-        return _curPos;
-    }
-
+    
     public Position chooseMyPosition(Stage lvl) {
 
         if (_lurchCount == 0) {

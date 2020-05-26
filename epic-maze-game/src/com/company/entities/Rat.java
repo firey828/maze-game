@@ -13,12 +13,28 @@ import static com.company.essentials.Direction.*;
 
 public class Rat {
 
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
     private Direction _curDir;
     private boolean _isAlive;
 
-    // public Position getPosition() { return _curPos;	}
+    // ======== GETTERS ========
+    public Direction getDirection() {
+        return _curDir;
+    }
+    public Position getPosition() {
+        return _curPos;
+    }
+    public boolean isRatAlive() {
+        return _isAlive;
+    }
 
+    // ======== SETTERS ========
+    public void setPosition(Position p) {
+        _curPos = p;
+    }
+
+    // ======== CONSTRUCTORS ========
     public Rat(Position ratSpawnPoint) {
         _curPos = ratSpawnPoint;
         _curDir = rSouth;
@@ -27,22 +43,6 @@ public class Rat {
 
     public void killRat() {
         _isAlive = false;
-    }
-
-    public boolean isRatAlive() {
-        return _isAlive;
-    }
-
-    public Direction getDirection() {
-        return _curDir;
-    }
-
-    public void setPosition(Position p) {
-        _curPos = p;
-    }
-
-    public Position getPosition() {
-        return _curPos;
     }
 
     public Position chooseMyPosition(Stage lvl) {
