@@ -7,7 +7,7 @@ public interface Item {
     // ======== SETTERS ========
     public void setPosition(Position p);
 
-    // getters
+    // ======== GETTERS ========
     public int getRow();
     public int getCol();
     public Position getPosition();

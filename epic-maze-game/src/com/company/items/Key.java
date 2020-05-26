@@ -4,12 +4,10 @@ import com.company.Position;
 
 public class Key implements Item {
 
-    // instance variables
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
 
-    // public Position getPosition() { return _curPos;	}
-
-    // constructor
+    // ======== CONSTRUCTORS ========
     public Key(Position keySpawnPoint) {
         _curPos = keySpawnPoint;
     }

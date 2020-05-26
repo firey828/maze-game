@@ -13,13 +13,31 @@ import static com.company.essentials.Direction.*;
 
 public class Minotaur {
 
-    // instance variables
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
     private Direction _curDir;
     private boolean _isAlive;
 
-    // public Position getPosition() { return _curPos;	}
+    // ======== GETTERS ========
+    public Direction getDirection() {
+        return _curDir;
+    }
+    public int getRow() {
+        return _curPos.getRow();
+    }
+    public int getCol() {
+        return _curPos.getCol();
+    }
+    public Position getPosition() {
+        return _curPos;
+    }
 
+    // ======== SETTERS ========
+    public void setPosition(Position p) {
+        _curPos = p;
+    }
+
+    // ======== CONSTRUCTORS ========
     public Minotaur(Position minotaurSpawnPoint) {
         _curPos = minotaurSpawnPoint;
         _curDir = Direction.mSouth;
@@ -32,26 +50,6 @@ public class Minotaur {
 
     public boolean isMinotaurAlive() {
         return _isAlive;
-    }
-
-    public Direction getDirection() {
-        return _curDir;
-    }
-
-    public void setPosition(Position p) {
-        _curPos = p;
-    }
-
-    public int getRow() {
-        return _curPos.getRow();
-    }
-
-    public int getCol() {
-        return _curPos.getCol();
-    }
-
-    public Position getPosition() {
-        return _curPos;
     }
 
     public Position chooseMyPosition(Stage lvl) {
