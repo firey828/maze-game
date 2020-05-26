@@ -117,6 +117,9 @@ public class StageA1 implements Stage {
         _levelTenTorch = new Torch(_sm.rr(_avi));
     }
 
+    /*
+     * Returns true if a call of amIAt() from this Stage's Player returns true; false otherwise
+     */
     public boolean playerIsAtEnd() {
         return _levelTenPlayer.amIAt(_end);
     }

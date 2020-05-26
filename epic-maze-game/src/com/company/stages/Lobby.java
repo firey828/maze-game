@@ -99,6 +99,9 @@ public class Lobby implements Stage {
         maze[r][c];
     }
 
+    /*
+     * Returns true if a call of amIAt() from this Stage's Player returns true; false otherwise
+     */
     public boolean playerIsAtEnd() {
         return _levelOnePlayer.amIAt(_end);
     }

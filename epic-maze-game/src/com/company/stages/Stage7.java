@@ -95,6 +95,9 @@ public class Stage7 implements Stage {
         _levelSevenTorch = new Torch(_sm.rr(_avi));
     }
 
+    /*
+     * Returns true if a call of amIAt() from this Stage's Player returns true; false otherwise
+     */
     public boolean playerIsAtEnd() {
         return _levelSevenPlayer.amIAt(_end);
     }

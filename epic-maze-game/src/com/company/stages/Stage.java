@@ -19,6 +19,9 @@ public interface Stage {
     public Sword getMySword();
     public Torch getMyTorch();
 
+    /*
+     * Returns true if a call of amIAt() from the Stage's Player returns true; false otherwise
+     */
     public boolean playerIsAtEnd();
     public boolean isWall(int r, int c);
     public boolean isWall(Position p);

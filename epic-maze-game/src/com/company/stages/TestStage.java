@@ -89,6 +89,10 @@ public class TestStage implements Stage {
         _levelOneSword = new Sword(new Position(4, 4));
         _levelOneTorch = new Torch(new Position(5, 5));
     }
+
+    /*
+     * Returns true if a call of amIAt() from this Stage's Player returns true; false otherwise
+     */
     public boolean playerIsAtEnd() {
         return _levelOnePlayer.amIAt(_end);
     }
