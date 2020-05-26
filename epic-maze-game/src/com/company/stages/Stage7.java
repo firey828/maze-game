@@ -10,36 +10,64 @@ import com.company.effects.*;
 import java.util.ArrayList;
 
 public class Stage7 implements Stage {
+
+    // ======== INSTANCE VARIABLES ========
     private boolean[][] _maze;
     private Position _start;
     private Position _end;
-
     private ArrayList<Position> _avi;
-
     private Player _levelSevenPlayer;
     private Minotaur _levelSevenMinotaur;
     private Rat _levelSevenRat;
     private Zombie _levelSevenZombie;
-
     private Item _levelSevenKey;
     private Item _levelSevenMap;
     private Item _levelSevenSword;
     private Item _levelSevenTorch;
 
+    // ======== CONSTANTS ========
     private static final int PLAYER_START_ROW = 2;
     private static final int PLAYER_START_COL = 0;
     private static final int PLAYER_END_ROW = 3;
     private static final int PLAYER_END_COL = 0;
-
     private static final int MINOTAUR_START_ROW = 7;
     private static final int MINOTAUR_START_COL = 6;
-
     private static final int RAT_START_ROW = 1;
     private static final int RAT_START_COL = 1;
-
     private static final int ZOMBIE_START_ROW = 1;
     private static final int ZOMBIE_START_COL = 4;
 
+    // ======== GETTERS ========
+    public boolean[][] getMaze() {
+        return _maze;
+    }
+    public Position getStart() {
+        return _start;
+    }
+    public Position getEnd() {
+        return _end;
+    }
+    public Player getMyPlayer() {
+        return _levelSevenPlayer;
+    }
+    public Minotaur getMyMinotaur() {
+        return _levelSevenMinotaur;
+    }
+    public Rat getMyRat() {
+        return _levelSevenRat;
+    }
+    public Zombie getMyZombie() { return _levelSevenZombie; }
+    public Key getMyKey() { return (Key) _levelSevenKey; }
+    public Map getMyMap() { return (Map) _levelSevenMap; }
+    public Sword getMySword() { return (Sword) _levelSevenSword; }
+    public Torch getMyTorch() { return (Torch) _levelSevenTorch; }
+
+    // ======== SETTERS ========
+    public void setPlayerIsEnded(boolean b) {
+
+    }
+
+    // ======== CONSTRUCTORS ========
     public Stage7() {
         _maze = new boolean[][] {
                 {true, true, true, true, true, true, true, true, true, true},
@@ -67,20 +95,8 @@ public class Stage7 implements Stage {
         _levelSevenTorch = new Torch(_sm.rr(_avi));
     }
 
-    public Position getStart() {
-        return _start;
-    }
-
-    public Position getEnd() {
-        return _end;
-    }
-
     public boolean playerIsAtEnd() {
         return _levelSevenPlayer.amIAt(_end);
-    }
-
-    public boolean[][] getMaze() {
-        return _maze;
     }
 
     public boolean isWall(int r, int c) {
@@ -94,28 +110,6 @@ public class Stage7 implements Stage {
             return true;
         }
     }
-
-    public Player getMyPlayer() {
-        return _levelSevenPlayer;
-    }
-
-    public Minotaur getMyMinotaur() {
-        return _levelSevenMinotaur;
-    }
-
-    public Rat getMyRat() {
-        return _levelSevenRat;
-    }
-
-    public Zombie getMyZombie() { return _levelSevenZombie; }
-
-    public Key getMyKey() { return (Key) _levelSevenKey; }
-
-    public Map getMyMap() { return (Map) _levelSevenMap; }
-
-    public Sword getMySword() { return (Sword) _levelSevenSword; }
-
-    public Torch getMyTorch() { return (Torch) _levelSevenTorch; }
 
     public boolean isInBounds(Position p) {
         int r = p.getRow();
@@ -131,9 +125,5 @@ public class Stage7 implements Stage {
         } else {
             return true;
         }
-    }
-
-    public void setPlayerIsEnded(boolean b) {
-
     }
 }

@@ -10,36 +10,63 @@ import com.company.effects.*;
 import java.util.ArrayList;
 
 public class Stage8 implements Stage {
+    // ======== INSTANCE VARIABLES ========
     private boolean[][] _maze;
     private Position _start;
     private Position _end;
-
     private ArrayList<Position> _avi;
-
     private Player _levelEightPlayer;
     private Minotaur _levelEightMinotaur;
     private Rat _levelEightRat;
     private Zombie _levelEightZombie;
-
     private Item _levelEightKey;
     private Item _levelEightMap;
     private Item _levelEightSword;
     private Item _levelEightTorch;
 
+    // ======== CONSTANTS ========
     private static final int PLAYER_START_ROW = 0;
     private static final int PLAYER_START_COL = 1;
     private static final int PLAYER_END_ROW = 0;
     private static final int PLAYER_END_COL = 3;
-
     private static final int MINOTAUR_START_ROW = 7;
     private static final int MINOTAUR_START_COL = 6;
-
     private static final int RAT_START_ROW = 1;
     private static final int RAT_START_COL = 1;
-
     private static final int ZOMBIE_START_ROW = 1;
     private static final int ZOMBIE_START_COL = 4;
 
+    // ======== GETTERS ========
+    public boolean[][] getMaze() {
+        return _maze;
+    }
+    public Position getStart() {
+        return _start;
+    }
+    public Position getEnd() {
+        return _end;
+    }
+    public Player getMyPlayer() {
+        return _levelFivePlayer;
+    }
+    public Minotaur getMyMinotaur() {
+        return _levelFiveMinotaur;
+    }
+    public Rat getMyRat() {
+        return _levelFiveRat;
+    }
+    public Zombie getMyZombie() { return _levelFiveZombie; }
+    public Key getMyKey() { return (Key) _levelFiveKey; }
+    public Map getMyMap() { return (Map) _levelFiveMap; }
+    public Sword getMySword() { return (Sword) _levelFiveSword; }
+    public Torch getMyTorch() { return (Torch) _levelFiveTorch; }
+
+    // ======== SETTERS ========
+    public void setPlayerIsEnded(boolean b) {
+
+    }
+
+    // ======== CONSTRUCTORS ========
     public Stage8() {
         _maze = new boolean[][] {
                 {true, false, true,  false, true,  true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true},
@@ -91,20 +118,8 @@ public class Stage8 implements Stage {
         _levelEightTorch = new Torch(_sm.rr(_avi));
     }
 
-    public Position getStart() {
-        return _start;
-    }
-
-    public Position getEnd() {
-        return _end;
-    }
-
     public boolean playerIsAtEnd() {
         return _levelEightPlayer.amIAt(_end);
-    }
-
-    public boolean[][] getMaze() {
-        return _maze;
     }
 
     public boolean isWall(int r, int c) {
@@ -118,28 +133,6 @@ public class Stage8 implements Stage {
             return true;
         }
     }
-
-    public Player getMyPlayer() {
-        return _levelEightPlayer;
-    }
-
-    public Minotaur getMyMinotaur() {
-        return _levelEightMinotaur;
-    }
-
-    public Rat getMyRat() {
-        return _levelEightRat;
-    }
-
-    public Zombie getMyZombie() { return _levelEightZombie; }
-
-    public Key getMyKey() { return (Key) _levelEightKey; }
-
-    public Map getMyMap() { return (Map) _levelEightMap; }
-
-    public Sword getMySword() { return (Sword) _levelEightSword; }
-
-    public Torch getMyTorch() { return (Torch) _levelEightTorch; }
 
     public boolean isInBounds(Position p) {
         int r = p.getRow();
@@ -155,9 +148,5 @@ public class Stage8 implements Stage {
         } else {
             return true;
         }
-    }
-
-    public void setPlayerIsEnded(boolean b) {
-
     }
 }
