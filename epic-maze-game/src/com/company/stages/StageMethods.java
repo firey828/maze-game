@@ -12,6 +12,10 @@ public class StageMethods {
 
     }
 
+    /*
+     * Returns an ArrayList of all Positions corresponding to elements on the board that
+     * do not contain walls.
+     */
     public ArrayList<Position> getAvailablePositions(boolean[][] board) {
         ArrayList<Position> n = new ArrayList <Position>(0);
         for (int x = 0; x < board.length; x++) {
@@ -24,6 +28,9 @@ public class StageMethods {
         return n;
     }
 
+    /*
+     * Returns a randomly-selected Position contained within the provided list of Positions.
+     */
     public Position rr(ArrayList<Position> p) {
         return p.get((int)(Math.random() * p.size()));
     }
