@@ -4,22 +4,10 @@ import com.company.Position;
 
 public class Torch implements Item {
 
-    // instance variables
+    // ======== INSTANCE VARIABLES ========
     private Position _curPos;
 
-    // public Position getPosition() { return _curPos;	}
-
-    // constructors
-    public Torch(Position torchSpawnPoint) {
-        _curPos = torchSpawnPoint;
-    }
-
-    // setters
-    public void setPosition(Position p) {
-        _curPos = p;
-    }
-
-    // getters
+    // ======== GETTERS ========
     public int getRow() {
         return _curPos.getRow();
     }
@@ -29,4 +17,18 @@ public class Torch implements Item {
     public Position getPosition() {
         return _curPos;
     }
+
+    // ======== SETTERS ========
+    public void setPosition(Position p) {
+        _curPos = p;
+    }
+
+    // ======== CONSTRUCTORS ========
+    public Torch(Position torchSpawnPoint) {
+        _curPos = torchSpawnPoint;
+    }
+
+
+
+
 }

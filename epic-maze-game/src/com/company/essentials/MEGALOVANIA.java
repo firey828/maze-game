@@ -9,8 +9,10 @@ import sun.audio.*;
  */
 public class MEGALOVANIA {
 
+    // ======== INSTANCE VARIABLES ========
     private AudioStream audioStream;
 
+    // ======== CONSTRUCTORS ========
     public MEGALOVANIA() {
         InputStream in = null;
         try {

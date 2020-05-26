@@ -16,10 +16,12 @@ import sun.audio.AudioStream;
 
 public class Keyboard implements KeyListener {
 
+    // ======== INSTANCE VARIABLES ========
     private JFrame _frame;
     private Window _f;
     private MusicStuff _audioStream;
 
+    // ======== CONSTRUCTORS ========
     public Keyboard(JFrame myStage, Window f, MusicStuff audioStream) {
         _frame = myStage;
         _f = f;

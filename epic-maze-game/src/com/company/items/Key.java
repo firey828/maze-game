@@ -7,17 +7,7 @@ public class Key implements Item {
     // ======== INSTANCE VARIABLES ========
     private Position _curPos;
 
-    // ======== CONSTRUCTORS ========
-    public Key(Position keySpawnPoint) {
-        _curPos = keySpawnPoint;
-    }
-
-    // setters
-    public void setPosition(Position p) {
-        _curPos = p;
-    }
-
-    // getters
+    // ======== GETTERS ========
     public int getRow() {
         return _curPos.getRow();
     }
@@ -27,4 +17,15 @@ public class Key implements Item {
     public Position getPosition() {
         return _curPos;
     }
+
+    // ======== SETTERS ========
+    public void setPosition(Position p) {
+        _curPos = p;
+    }
+
+    // ======== CONSTRUCTORS ========
+    public Key(Position keySpawnPoint) {
+        _curPos = keySpawnPoint;
+    }
+
 }

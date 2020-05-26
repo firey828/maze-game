@@ -9,8 +9,10 @@ import sun.audio.*;
  */
 public class MusicStuff {
 
+    // ======== INSTANCE VARIABLES ========
     private AudioStream audioStream;
 
+    // ======== CONSTRUCTORS ========
     public MusicStuff() {
         InputStream in = null;
         try {

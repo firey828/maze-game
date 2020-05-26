@@ -12,34 +12,63 @@ public class Lobby implements Stage {
     // "so, how did you implement your maps?"
     // "....well now im embarrassed to say."
 
+    // ======== INSTANCE VARIABLES ========
     private boolean[][] _maze;
     private Position _start;
     private Position _end;
-
     private Player _levelOnePlayer;
     private Minotaur _levelOneMinotaur;
     private Rat _levelOneRat;
     private Zombie _levelOneZombie;
-
     private Item _levelOneKey;
     private Item _levelOneMap;
     private Item _levelOneSword;
     private Item _levelOneTorch;
 
+    // ======== CONSTANTS ========
     private static final int PLAYER_START_ROW = 2;
     private static final int PLAYER_START_COL = 5;
     private static final int PLAYER_END_ROW = 9;
     private static final int PLAYER_END_COL = 1;
-
     private static final int MINOTAUR_START_ROW = 7;
     private static final int MINOTAUR_START_COL = 6;
-
     private static final int RAT_START_ROW = 1;
     private static final int RAT_START_COL = 1;
-
     private static final int ZOMBIE_START_ROW = 1;
     private static final int ZOMBIE_START_COL = 4;
 
+    // ======== GETTERS ========
+    public Position getStart() {
+        return _start;
+    }
+    public Position getEnd() {
+        return _end;
+    }
+    public boolean[][] getMaze() {
+        return _maze;
+    }
+    public Player getMyPlayer() {
+        return _levelOnePlayer;
+    }
+    public Minotaur getMyMinotaur() {
+        return _levelOneMinotaur;
+    }
+    public Rat getMyRat() {
+        return _levelOneRat;
+    }
+    public Zombie getMyZombie() { return _levelOneZombie; }
+    public Key getMyKey() { return (Key) _levelOneKey; }
+    public Map getMyMap() { return (Map) _levelOneMap; }
+    public Sword getMySword() { return (Sword) _levelOneSword; }
+    public Torch getMyTorch() { return (Torch) _levelOneTorch; }
+
+
+    // ======== SETTERS ========
+    public void setPlayerIsEnded(boolean b) {
+
+    }
+
+    // ======== CONSTRUCTORS ========
     public Lobby() {
         _maze = new boolean[][] {
                 {true,  true, 	true, 	true, 	true, 	true, 	true, 	true, 	true, 	true},
@@ -65,24 +94,13 @@ public class Lobby implements Stage {
         _levelOneTorch = new Torch(new Position(6, 6));
     }
 
-    public Position getStart() {
-        return _start;
-    }
-
-    public Position getEnd() {
-        return _end;
+    public boolean isWall(int r, int c) {
+        return _
+        maze[r][c];
     }
 
     public boolean playerIsAtEnd() {
         return _levelOnePlayer.amIAt(_end);
-    }
-
-    public boolean[][] getMaze() {
-        return _maze;
-    }
-
-    public boolean isWall(int r, int c) {
-        return _maze[r][c];
     }
 
     public boolean isWall(Position p) {
@@ -92,28 +110,6 @@ public class Lobby implements Stage {
             return true;
         }
     }
-
-    public Player getMyPlayer() {
-        return _levelOnePlayer;
-    }
-
-    public Minotaur getMyMinotaur() {
-        return _levelOneMinotaur;
-    }
-
-    public Rat getMyRat() {
-        return _levelOneRat;
-    }
-
-    public Zombie getMyZombie() { return _levelOneZombie; }
-
-    public Key getMyKey() { return (Key) _levelOneKey; }
-
-    public Map getMyMap() { return (Map) _levelOneMap; }
-
-    public Sword getMySword() { return (Sword) _levelOneSword; }
-
-    public Torch getMyTorch() { return (Torch) _levelOneTorch; }
 
     public boolean isInBounds(Position p) {
         int r = p.getRow();
@@ -129,9 +125,5 @@ public class Lobby implements Stage {
         } else {
             return true;
         }
-    }
-
-    public void setPlayerIsEnded(boolean b) {
-
     }
 }

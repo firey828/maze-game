@@ -4,8 +4,7 @@ import javax.swing.*;
 
 public class MessengerFromAcrossTheAbyss {
 
-    // this class
-
+    // ======== CONSTRUCTORS ========
     public void twinElementalDragon(String twinElementalDragon) {
         JOptionPane.showMessageDialog(null, twinElementalDragon);
     }
