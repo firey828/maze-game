@@ -52,7 +52,7 @@ public class Zombie {
     public void killZombie() {
         _isAlive = false;
     }
-    
+
     public Position chooseMyPosition(Stage lvl) {
 
         if (_lurchCount == 0) {

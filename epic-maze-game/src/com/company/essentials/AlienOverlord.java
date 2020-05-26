@@ -9,15 +9,18 @@ import javax.swing.*;
 
 public class AlienOverlord {
 
+    // ======== INSTANCE VARIABLES ========
     Window _f;
     MessengerFromAcrossTheAbyss _twinElementalDragon;
     MusicStuff musicThing;
     Stage[] _levels;
 
+    // ======== GETTERS ========
     public MusicStuff getMusicThing() {
         return musicThing;
     }
 
+    // ======== CONSTRUCTORS ========
     public AlienOverlord() {
         // TODO: implement an information/help section using /view/infoGUI.png
         musicThing = new MusicStuff();
