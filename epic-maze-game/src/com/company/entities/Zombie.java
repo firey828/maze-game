@@ -49,6 +49,9 @@ public class Zombie {
         _isAlive = true;
     }
 
+    /*
+     * Sets the value of _isAlive to false.
+     */
     public void killZombie() {
         _isAlive = false;
     }

@@ -31,6 +31,9 @@ public class Minotaur {
     public Position getPosition() {
         return _curPos;
     }
+    public boolean isMinotaurAlive() {
+        return _isAlive;
+    }
 
     // ======== SETTERS ========
     public void setPosition(Position p) {
@@ -44,14 +47,16 @@ public class Minotaur {
         _isAlive = true;
     }
 
+    /*
+     * Sets the value of _isAlive to false.
+     */
     public void killMinotaur() {
         _isAlive = false;
     }
 
-    public boolean isMinotaurAlive() {
-        return _isAlive;
-    }
-
+    /*
+     * Decides which position, and returns it.
+     */
     public Position chooseMyPosition(Stage lvl) {
 
         Position leftP = _curPos.oneLeft();

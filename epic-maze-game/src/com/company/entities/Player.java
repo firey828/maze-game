@@ -47,6 +47,9 @@ public class Player {
         _curPos = _mySpawnPoint;
     }
 
+    /*
+     * Sets the value of _isAlive to false.
+     */
     public void killPlayer() {
         _isAlive = false;
     }
@@ -101,21 +104,38 @@ public class Player {
         return false;
     }
 
+    /*
+     * Sets the value of _hasSword to true.
+     */
     public void pickUpSword() {
         _hasSword = true;
     }
 
+    /*
+     * Sets the value of _hasMap to true.
+     */
     public void pickUpMap() {
         _hasMap = true;
     }
 
+    /*
+     * Sets the value of _hasTorch to true and resets the counter.
+     */
     public void pickUpTorch() {
         _hasTorch = true;
         _stepsTillTorchRunsOut = 100;
     }
 
-    public void pickUpKey() { _hasKey = true; }
+    /*
+     * Sets the value of _hasKey to true.
+     */
+    public void pickUpKey() {
+        _hasKey = true;
+    }
 
+    /*
+     * Sets the value of _hasSword to false.
+     */
     public void useSword() {
         _hasSword = false;
     }

@@ -99,6 +99,11 @@ public class Window {
         // System.out.println(windowCount + " windows have been made! (Should always be 1)");
     }
 
+    /*
+     * Displays the Stage's Player by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Player's location. By
+     * default, the Player is facing up.
+     */
     private void setupPlayer() {
         ImageIcon i = new ImageIcon(getClass().getResource("player_up.png"));
         _playerLabel = new JLabel(i);
@@ -110,6 +115,11 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Minotaur by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Minotaur's location. By
+     * default, the Minotaur is facing up.
+     */
     private void setupMinotaur() {
         ImageIcon i = new ImageIcon(getClass().getResource("mino_up.png"));
         _minotaurLabel = new JLabel(i);
@@ -121,6 +131,11 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Rat by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Rat's location. By
+     * default, the Rat is facing up.
+     */
     private void setupRat() {
         ImageIcon i = new ImageIcon(getClass().getResource("rat_up.png"));
         _ratLabel = new JLabel(i);
@@ -155,6 +170,11 @@ public class Window {
         }
     }
 
+    /*
+     * Displays the Stage's Zombie by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Zombie's location. By
+     * default, the Zombie is facing up.
+     */
     private void setupZombie() {
         ImageIcon i = new ImageIcon(getClass().getResource("zombie_up.png"));
         _zombieLabel = new JLabel(i);
@@ -166,6 +186,10 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Key by placing the key sprite in the correct location on
+     * the grid.
+     */
     private void setupKey() {
         ImageIcon i = new ImageIcon(getClass().getResource("key.png"));
         _keyLabel = new JLabel(i);
@@ -177,6 +201,10 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Map by placing the map sprite in the correct location on
+     * the grid.
+     */
     private void setupMap() {
         ImageIcon i = new ImageIcon(getClass().getResource("map.png"));
         _mapLabel = new JLabel(i);
@@ -188,6 +216,10 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Sword by placing the sword sprite in the correct location on
+     * the grid.
+     */
     private void setupSword() {
         ImageIcon i = new ImageIcon(getClass().getResource("sword.png"));
         _swordLabel = new JLabel(i);
@@ -199,6 +231,10 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Displays the Stage's Torch by placing the torch sprite in the correct location on
+     * the grid.
+     */
     private void setupTorch() {
         ImageIcon i = new ImageIcon(getClass().getResource("torch.png"));
         _torchLabel = new JLabel(i);
@@ -272,7 +308,6 @@ public class Window {
             JOptionPane.showMessageDialog(_frame, "Congrats! You reached the end.");
         }
     }
-
     public void removePlayer() {
         int r = _player.getPosition().getRow();
         int c = _player.getPosition().getCol();
@@ -291,7 +326,6 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as minotaur
     }
-
     public void removeMinotaur() {
         int r = _minotaur.getRow();
         int c = _minotaur.getCol();
@@ -310,7 +344,6 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as minotaur
     }
-
     public void removeRat() {
         int r = _rat.getPosition().getRow();
         int c = _rat.getPosition().getCol();
@@ -329,7 +362,6 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as zombie
     }
-
     public void removeZombie() {
         int r = _zombie.getRow();
         int c = _zombie.getCol();
@@ -347,7 +379,6 @@ public class Window {
         _labelMaze[r][c].add(_keyLabel);
         _labelMaze[r][c].repaint();
     }
-
     public void removeKey() {
         int r = _key.getRow();
         int c = _key.getCol();
@@ -365,7 +396,6 @@ public class Window {
         _labelMaze[r][c].add(_mapLabel);
         _labelMaze[r][c].repaint();
     }
-
     public void removeMap() {
         int r = _map.getRow();
         int c = _map.getCol();
@@ -383,7 +413,6 @@ public class Window {
         _labelMaze[r][c].add(_swordLabel);
         _labelMaze[r][c].repaint();
     }
-
     public void removeSword() {
         int r = _sword.getRow();
         int c = _sword.getCol();
@@ -401,7 +430,6 @@ public class Window {
         _labelMaze[r][c].add(_torchLabel);
         _labelMaze[r][c].repaint();
     }
-
     public void removeTorch() {
         int r = _torch.getRow();
         int c = _torch.getCol();

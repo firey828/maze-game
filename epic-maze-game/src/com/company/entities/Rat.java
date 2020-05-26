@@ -41,6 +41,9 @@ public class Rat {
         _isAlive = true;
     }
 
+    /*
+     * Sets the value of _isAlive to false.
+     */
     public void killRat() {
         _isAlive = false;
     }
