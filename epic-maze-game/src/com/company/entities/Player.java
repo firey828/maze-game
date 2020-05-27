@@ -54,14 +54,26 @@ public class Player {
         _isAlive = false;
     }
 
+    /*
+     * It's like saying this.equals(Position dest), except it actually works!
+     */
     public boolean amIAt(Position dest) {
         return _curPos.samePosAs(dest);
     }
 
+    /*
+     * If the value of _hasTorch before a call to this method is true, but the value
+     * of _stepsTillTorchRunsOut before a call to this method is 1, this method will
+     * set _hasTorch to false and set _stepsTillTorchRunsOut to its initial value of
+     * 100. It will also display a message with options. The option the user chooses
+     * is irrelevant. However, if the latter of the aforementioned conditions is not
+     * met, but the value of _hasTorch before a call to this method is true, the old
+     * value of _stepsTillTorchRunsOut will be decremented and replaced with the new
+     * resulting number.
+     */
     public void torchCheck() {
         if (_hasTorch) {
             _stepsTillTorchRunsOut--;
-            // System.out.println("DEBUG: steps till torch runs out: " + _stepsTillTorchRunsOut);
             if (_stepsTillTorchRunsOut <= 0) {
                 _hasTorch = false;
                 _stepsTillTorchRunsOut = 100;
@@ -69,11 +81,15 @@ public class Player {
                         "your torch has died out, you can no longer make out the writing on your map. Good thing you\n" +
                         "memorized it....right?");
             }
-        } else {
-            // System.out.println("DEBUG: player does not have torch.");
         }
     }
 
+    /*
+     * Attempts to take a single step in the Direction d on Stage z. Ensures that the
+     * torch is checked as necessary via the torchCheck() method. Returns true if the
+     * step was successfully taken (namely, if there is an empty space in the desired
+     * direction and said space is not out of bounds), false otherwise.
+     */
     public boolean move(Direction d, Stage z) {
         if (d == Direction.North) {
             if (_curPos.getRow() - 1 >= 0 && !z.getMaze()[_curPos.getRow() - 1][_curPos.getCol()]) {
