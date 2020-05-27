@@ -14,7 +14,8 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -42,11 +43,11 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="867">
               <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage3#0" />
@@ -60,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="901">
               <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage4#0" />
@@ -75,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
+            <state relative-caret-position="884">
               <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage5#0" />
@@ -90,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="884">
               <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage6#0" />
@@ -105,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="901">
               <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage7#0" />
@@ -119,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="884">
               <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage8#0" />
@@ -132,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="884">
               <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#Stage9#0" />
@@ -147,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/StageA1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="884">
               <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
               <folding>
                 <element signature="method#setPlayerIsEnded#0;class#StageA1#0" />
@@ -172,8 +173,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/TestStage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="166">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding>
                 <element signature="method#TestStage#0;class#TestStage#0" />
                 <element signature="method#isWall#1;class#TestStage#0" />
@@ -250,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,6 +325,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,17 +364,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -381,14 +380,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -399,9 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -411,18 +410,12 @@
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/sword.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/door4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/door1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/door4.png" />
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/door1.png" />
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/map.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/ButtListener.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/ButtListener.java" />
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/MessengerFromAcrossTheAbyss.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -443,20 +436,11 @@
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/void.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/DevStuff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/DevStuff.java" />
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Minotaur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding>
-            <element signature="method#Minotaur#0;class#Minotaur#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,10 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="method#Rat#0;class#Rat#0" />
-            <element signature="method#chooseMyPosition#0;class#Rat#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -475,10 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-          <folding>
-            <element signature="method#Zombie#0;class#Zombie#0" />
-            <element signature="method#chooseMyPosition#0;class#Zombie#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -486,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="method#AlienOverlord#0;class#AlienOverlord#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,10 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="136" column="42" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
-          <folding>
-            <element signature="method#torchCheck#0;class#Player#0" />
-            <element signature="method#move#0;class#Player#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,28 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="296" selection-start-line="296" selection-end-line="296" />
-          <folding>
-            <element signature="e#4625#5642#0" />
-            <element signature="e#6800#7185#0" />
-            <element signature="e#7191#7576#0" />
-            <element signature="e#7582#8212#0" />
-            <element signature="e#9310#9838#0" />
-            <element signature="e#9844#10057#0" />
-            <element signature="e#10063#10529#0" />
-            <element signature="e#10535#10728#0" />
-            <element signature="e#10734#11175#0" />
-            <element signature="e#11181#11382#0" />
-            <element signature="e#11388#11842#0" />
-            <element signature="e#11848#12033#0" />
-            <element signature="e#12039#12401#0" />
-            <element signature="e#12407#12580#0" />
-            <element signature="e#12586#12948#0" />
-            <element signature="e#12954#13127#0" />
-            <element signature="e#13133#13507#0" />
-            <element signature="e#13513#13694#0" />
-            <element signature="e#13700#14074#0" />
-            <element signature="e#14080#14261#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,12 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="98" column="56" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="56" />
-          <folding>
-            <element signature="method#setPlayerIsEnded#0;class#Stage1#0" />
-            <element signature="method#Stage1#0;class#Stage1#0" />
-            <element signature="method#isWall#1;class#Stage1#0" />
-            <element signature="method#isInBounds#0;class#Stage1#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,11 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
-          <folding>
-            <element signature="method#setPlayerIsEnded#0;class#Lobby#0" />
-            <element signature="method#Lobby#0;class#Lobby#0" />
-            <element signature="method#isWall#1;class#Lobby#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,18 +577,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="97" column="4" lean-forward="true" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-          <folding>
-            <element signature="method#setPlayerIsEnded#0;class#Stage2#0" />
-            <element signature="method#Stage2#0;class#Stage2#0" />
-            <element signature="method#isWall#1;class#Stage2#0" />
-            <element signature="method#isInBounds#0;class#Stage2#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="867">
           <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage3#0" />
@@ -664,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="901">
           <caret line="107" column="7" selection-start-line="107" selection-start-column="7" selection-end-line="107" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage4#0" />
@@ -677,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
+        <state relative-caret-position="884">
           <caret line="110" column="7" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage5#0" />
@@ -690,7 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="884">
           <caret line="109" column="7" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage6#0" />
@@ -703,7 +633,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="901">
           <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage7#0" />
@@ -715,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="884">
           <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage8#0" />
@@ -726,7 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="884">
           <caret line="98" column="7" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#Stage9#0" />
@@ -739,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/StageA1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="884">
           <caret line="121" column="7" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
           <folding>
             <element signature="method#setPlayerIsEnded#0;class#StageA1#0" />
@@ -760,8 +690,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/TestStage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="166">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
             <element signature="method#TestStage#0;class#TestStage#0" />
             <element signature="method#isWall#1;class#TestStage#0" />
