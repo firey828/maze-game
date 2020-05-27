@@ -20,43 +20,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7329" />
+          <entry key="java" value="7807" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7329" />
+          <entry key="JAVA" value="7807" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="76" />
+          <entry key="java" value="77" />
           <entry key="png" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="7" />
-          <entry key="JAVA" value="76" />
+          <entry key="JAVA" value="77" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage8.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="122" column="7" selection-start-line="122" selection-start-column="7" selection-end-line="122" selection-end-column="7" />
-              <folding>
-                <element signature="method#setPlayerIsEnded#0;class#Stage8#0" />
-                <element signature="method#Stage8#0;class#Stage8#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage9.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Minotaur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
               <folding>
                 <element signature="method#Minotaur#0;class#Minotaur#0" />
               </folding>
@@ -165,11 +152,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Rat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="408">
+              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
               <folding>
                 <element signature="method#Rat#0;class#Rat#0" />
-                <element signature="method#chooseMyPosition#0;class#Rat#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Zombie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1337">
+              <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+              <folding>
+                <element signature="method#Zombie#0;class#Zombie#0" />
               </folding>
             </state>
           </provider>
@@ -210,8 +208,6 @@
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/items/Map.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/items/Sword.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/items/Torch.java" />
-        <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Rat.java" />
-        <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Zombie.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/Window.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage3.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/stages/Stage2.java" />
@@ -229,6 +225,8 @@
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/stages/StageMethods.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Player.java" />
         <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Minotaur.java" />
+        <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Rat.java" />
+        <option value="$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Zombie.java" />
       </list>
     </option>
   </component>
@@ -329,7 +327,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590603077308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590603599118" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -430,13 +428,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/DevStuff.java" />
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Zombie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/essentials/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -685,6 +676,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Minotaur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+          <folding>
+            <element signature="method#Minotaur#0;class#Minotaur#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -700,21 +701,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Rat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="408">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
           <folding>
             <element signature="method#Rat#0;class#Rat#0" />
-            <element signature="method#chooseMyPosition#0;class#Rat#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Minotaur.java">
+    <entry file="file://$PROJECT_DIR$/epic-maze-game/src/com/company/entities/Zombie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+        <state relative-caret-position="-1337">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
           <folding>
-            <element signature="method#Minotaur#0;class#Minotaur#0" />
+            <element signature="method#Zombie#0;class#Zombie#0" />
           </folding>
         </state>
       </provider>

@@ -56,6 +56,27 @@ public class Zombie {
         _isAlive = false;
     }
 
+    /*
+     * The "AI" of the Zombie prioritizes certain decisions (out of necessity). If a decision is found
+     * to be logical, it will be implemented no matter what lower-priority decisions could have otherwise
+     * been made. In order from highest priority to lowest priority:
+     *
+     * 1. Stay in the same position if the player is also in my position.*
+     * 2. Move left if the player is anywhere directly to my left and the space immediately to my left is clear.
+     * 3. Move right if the player is anywhere directly to my right and the space immediately to my right is clear.
+     * 4. Move up if the player is anywhere directly above me and the space immediately above me is clear.
+     * 5. Move down if the player is anywhere directly below me and the space immediately below me is clear.
+     * 6. Stay in the same position and face down if there are no empty tiles available in any direction.*
+     * 7. Of the directions I am capable of moving in, I will move in a randomly-selected one.
+     * 8. Stay in the same position.**
+     *
+     * It is worth noting that the Zombie does not take its own speed into account when determining if a decision
+     * is logical. For all practical purposes, one might say that it simply assumes that a player in its row/column
+     * will simply stay in this same position.
+     *
+     * * This behavior cannot be observed under normal circumstances.
+     * ** This behavior can never be observed.
+     */
     public Position chooseMyPosition(Stage lvl) {
 
         if (_lurchCount == 0) {
@@ -66,14 +87,9 @@ public class Zombie {
             Position southP = _curPos.oneDown();
 
             boolean canMoveLeft = (!lvl.isWall(leftP)) && (lvl.isInBounds(leftP));
-            // System.out.println("canMoveLeft: " + canMoveLeft);
             boolean canMoveRight = (!lvl.isWall(rightP)) && (lvl.isInBounds(rightP));
-            // System.out.println("canMoveRight: " + canMoveRight);
             boolean canMoveUp = (!lvl.isWall(northP)) && (lvl.isInBounds(northP));
-            // System.out.println("canMoveUp: " + canMoveUp);
             boolean canMoveDown = (!lvl.isWall(southP)) && (lvl.isInBounds(southP));
-            // System.out.println("canMoveDown: " + canMoveDown);
-            // System.out.println("");
 
             Position playerPos = lvl.getMyPlayer().getPosition();
             int pRow = playerPos.getRow();
@@ -129,7 +145,6 @@ public class Zombie {
                 }
 
                 if (i <= 0) {
-                    // System.out.println("bluh zombie is trapped, this should never happen");
                     _curDir = zSouth;
                 } else {
                     int d = (int) (Math.random() * randomPositions.size());

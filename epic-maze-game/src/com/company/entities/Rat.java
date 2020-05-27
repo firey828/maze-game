@@ -48,6 +48,18 @@ public class Rat {
         _isAlive = false;
     }
 
+    /*
+     * The "AI" of the Rat prioritizes certain decisions (out of necessity). If a decision is found
+     * to be logical, it will be implemented no matter what lower-priority decisions could have otherwise
+     * been made. In order from highest priority to lowest priority:
+     *
+     * 1. Stay in the same position and face down if there are no empty tiles available in any direction.*
+     * 2. Of the directions I am capable of moving in, I will move in a randomly-selected one.
+     * 3. Stay in the same position.**
+     *
+     * * This behavior cannot be observed under normal circumstances.
+     * ** This behavior can never be observed.
+     */
     public Position chooseMyPosition(Stage lvl) {
 
         Position leftP = _curPos.oneLeft();
@@ -56,14 +68,9 @@ public class Rat {
         Position southP = _curPos.oneDown();
 
         boolean canMoveLeft = (!lvl.isWall(leftP)) && (lvl.isInBounds(leftP));
-        // System.out.println("canMoveLeft: " + canMoveLeft);
         boolean canMoveRight = (!lvl.isWall(rightP)) && (lvl.isInBounds(rightP));
-        // System.out.println("canMoveRight: " + canMoveRight);
         boolean canMoveUp = (!lvl.isWall(northP)) && (lvl.isInBounds(northP));
-        // System.out.println("canMoveUp: " + canMoveUp);
         boolean canMoveDown = (!lvl.isWall(southP)) && (lvl.isInBounds(southP));
-        // System.out.println("canMoveDown: " + canMoveDown);
-        // System.out.println("");
 
         int i = 0;
 
@@ -95,7 +102,6 @@ public class Rat {
         }
 
         if (i <= 0) {
-            // System.out.println("bluh rat is trapped, this should never happen");
             _curDir = rSouth;
         } else {
             int d = (int) (Math.random() * randomPositions.size());
