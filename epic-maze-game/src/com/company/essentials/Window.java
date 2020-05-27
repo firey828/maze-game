@@ -78,6 +78,9 @@ public class Window {
         _myAlienDude = myAlienDude;
     }
 
+    /*
+     * Listen, it works, okay? That's all that matters.
+     */
     public void makeActualFrameOnce(Stage lvl) {
         if (windowCount != 1) {
             _myStage = lvl;
@@ -100,9 +103,9 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Player by placing a sprite in which it is facing the desired
-     * direction at the cell of the grid that corresponds to the Player's location. By
-     * default, the Player is facing up.
+     * Prepares the Stage's Player for display by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Player's location. By default, the
+     * Player is facing up.
      */
     private void setupPlayer() {
         ImageIcon i = new ImageIcon(getClass().getResource("player_up.png"));
@@ -116,8 +119,8 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Minotaur by placing a sprite in which it is facing the desired
-     * direction at the cell of the grid that corresponds to the Minotaur's location. By
+     * Prepares the Stage's Minotaur for display by placing a sprite in which it is facing the
+     * desired direction at the cell of the grid that corresponds to the Minotaur's location. By
      * default, the Minotaur is facing up.
      */
     private void setupMinotaur() {
@@ -132,9 +135,9 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Rat by placing a sprite in which it is facing the desired
-     * direction at the cell of the grid that corresponds to the Rat's location. By
-     * default, the Rat is facing up.
+     * Prepares the Stage's Rat for display by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Rat's location. By default, the Rat
+     * is facing up.
      */
     private void setupRat() {
         ImageIcon i = new ImageIcon(getClass().getResource("rat_up.png"));
@@ -147,8 +150,11 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Using the power of incredibly inefficient programming, fogs up each and every square that
+     * must be fogged up.
+     */
     public void fogUp() {
-        // System.out.println("foggy time :) :) ");
         FogOfWar frog = new FogOfWar(_myStage);
         for (int x = 0; x < _fogLabel.length; x++) {
             for (int y = 0; y < _fogLabel[x].length; y++) {
@@ -171,9 +177,9 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Zombie by placing a sprite in which it is facing the desired
-     * direction at the cell of the grid that corresponds to the Zombie's location. By
-     * default, the Zombie is facing up.
+     * Prepares the Stage's Zombie for display by placing a sprite in which it is facing the desired
+     * direction at the cell of the grid that corresponds to the Zombie's location. By default, the
+     * Zombie is facing up.
      */
     private void setupZombie() {
         ImageIcon i = new ImageIcon(getClass().getResource("zombie_up.png"));
@@ -187,8 +193,8 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Key by placing the key sprite in the correct location on
-     * the grid.
+     * Prepares the Stage's Key for display by placing the key sprite in the correct location on the
+     * grid.
      */
     private void setupKey() {
         ImageIcon i = new ImageIcon(getClass().getResource("key.png"));
@@ -202,8 +208,8 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Map by placing the map sprite in the correct location on
-     * the grid.
+     * Prepares the Stage's Map for display by placing the map sprite in the correct location on the
+     * grid.
      */
     private void setupMap() {
         ImageIcon i = new ImageIcon(getClass().getResource("map.png"));
@@ -217,7 +223,7 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Sword by placing the sword sprite in the correct location on
+     * Prepares the Stage's Sword for display by placing the sword sprite in the correct location on
      * the grid.
      */
     private void setupSword() {
@@ -232,7 +238,7 @@ public class Window {
     }
 
     /*
-     * Displays the Stage's Torch by placing the torch sprite in the correct location on
+     * Prepares the Stage's Torch for display by placing the torch sprite in the correct location on
      * the grid.
      */
     private void setupTorch() {
@@ -246,6 +252,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Prepares the Labels for display.
+     */
     private void setupLabels(){
         _labelMaze = new JLabel[_myStage.getMaze().length][_myStage.getMaze()[0].length];
         for (int r = 0; r < _labelMaze.length; r++) {
@@ -262,10 +271,22 @@ public class Window {
 
     }
 
+    /*
+     * i have no idea why this exists. the parameter isError is unused, and, despite what the
+     * printed message says, it does not, in fact, exit/close anything but the method itself.
+     *
+     * update: im removing it
+     *
+     * update: removing it breaks the program and i honestly dont care enough to figure out why so
+     * im just gonna leave it like that
+     */
     public void closeWindow(boolean isError) {
-        System.out.println("oops i did it again");
+        System.out.println("Exiting");
     }
 
+    /*
+     * Prepares the Panel for display.
+     */
     private void setupPanel() {
         _pan = new JPanel(new GridLayout(_labelMaze.length, _labelMaze[0].length));
         for (int x = 0; x < _labelMaze.length; x++) {
@@ -276,6 +297,9 @@ public class Window {
         _pan.repaint();
     }
 
+    /*
+     * Prepares the Frame for display.
+     */
     private void setupFrame() {
         _frame = new JFrame("Maze game");
         _frame.add(_pan);
@@ -295,6 +319,9 @@ public class Window {
         _frame.setVisible(true); // TODO: try making this into a while loop based around whether or not player has completed the level
     }
 
+    /*
+     * Shows the Player.
+     */
     public void addPlayer(Position p, Direction d) {
         int r = p.getRow();
         int c = p.getCol();
@@ -308,6 +335,10 @@ public class Window {
             JOptionPane.showMessageDialog(_frame, "Congrats! You reached the end.");
         }
     }
+
+    /*
+     * Hides the Player.
+     */
     public void removePlayer() {
         int r = _player.getPosition().getRow();
         int c = _player.getPosition().getCol();
@@ -315,6 +346,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Minotaur.
+     */
     public void addMinotaur(Position p, Direction d) {
         int r = p.getRow();
         int c = p.getCol();
@@ -326,6 +360,10 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as minotaur
     }
+
+    /*
+     * Hides the Minotaur.
+     */
     public void removeMinotaur() {
         int r = _minotaur.getRow();
         int c = _minotaur.getCol();
@@ -333,6 +371,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Rat.
+     */
     public void addRat(Position p, Direction d) {
         int r = p.getRow();
         int c = p.getCol();
@@ -344,6 +385,10 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as minotaur
     }
+
+    /*
+     * Hides the Rat.
+     */
     public void removeRat() {
         int r = _rat.getPosition().getRow();
         int c = _rat.getPosition().getCol();
@@ -351,6 +396,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Zombie.
+     */
     public void addZombie(Position p, Direction d) {
         int r = p.getRow();
         int c = p.getCol();
@@ -362,6 +410,10 @@ public class Window {
         _labelMaze[r][c].repaint();
         // TODO: player dies if it is on same square as zombie
     }
+
+    /*
+     * Hides the Zombie.
+     */
     public void removeZombie() {
         int r = _zombie.getRow();
         int c = _zombie.getCol();
@@ -369,6 +421,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Key.
+     */
     public void addKey(Position p) {
         int r = p.getRow();
         int c = p.getCol();
@@ -379,6 +434,10 @@ public class Window {
         _labelMaze[r][c].add(_keyLabel);
         _labelMaze[r][c].repaint();
     }
+
+    /*
+     * Hides the Key.
+     */
     public void removeKey() {
         int r = _key.getRow();
         int c = _key.getCol();
@@ -386,6 +445,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Map.
+     */
     public void addMap(Position p) {
         int r = p.getRow();
         int c = p.getCol();
@@ -396,6 +458,10 @@ public class Window {
         _labelMaze[r][c].add(_mapLabel);
         _labelMaze[r][c].repaint();
     }
+
+    /*
+     * Hides the Map.
+     */
     public void removeMap() {
         int r = _map.getRow();
         int c = _map.getCol();
@@ -403,6 +469,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Sword.
+     */
     public void addSword(Position p) {
         int r = p.getRow();
         int c = p.getCol();
@@ -413,6 +482,10 @@ public class Window {
         _labelMaze[r][c].add(_swordLabel);
         _labelMaze[r][c].repaint();
     }
+
+    /*
+     * Hides the Sword.
+     */
     public void removeSword() {
         int r = _sword.getRow();
         int c = _sword.getCol();
@@ -420,6 +493,9 @@ public class Window {
         _labelMaze[r][c].repaint();
     }
 
+    /*
+     * Shows the Torch.
+     */
     public void addTorch(Position p) {
         int r = p.getRow();
         int c = p.getCol();
@@ -430,6 +506,10 @@ public class Window {
         _labelMaze[r][c].add(_torchLabel);
         _labelMaze[r][c].repaint();
     }
+
+    /*
+     * Hides the Torch.
+     */
     public void removeTorch() {
         int r = _torch.getRow();
         int c = _torch.getCol();
