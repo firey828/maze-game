@@ -27,5 +27,4 @@ public class Key implements Item {
     public Key(Position keySpawnPoint) {
         _curPos = keySpawnPoint;
     }
-
 }

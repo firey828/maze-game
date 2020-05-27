@@ -27,6 +27,4 @@ public class Map implements Item {
     public Map(Position mapSpawnPoint) {
         _curPos = mapSpawnPoint;
     }
-
-
 }

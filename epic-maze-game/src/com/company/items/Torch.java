@@ -27,8 +27,4 @@ public class Torch implements Item {
     public Torch(Position torchSpawnPoint) {
         _curPos = torchSpawnPoint;
     }
-
-
-
-
 }

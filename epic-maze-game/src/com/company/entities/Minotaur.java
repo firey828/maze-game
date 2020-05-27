@@ -147,4 +147,3 @@ public class Minotaur {
         return _curPos;
     }
 }
-
